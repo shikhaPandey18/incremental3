@@ -9,6 +9,9 @@ namespace dotnetapp.Models
             : base(options)
         {
         }
+        public virtual DbSet<Player> Players {get; set;}
+        public virtual DbSet<Team> Teams {get; set;}
+        public virtual DbSet<User> Users {get; set;}
 
         // Add DbSet properties for other entities as needed
     }
